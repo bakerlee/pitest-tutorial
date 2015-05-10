@@ -24,7 +24,12 @@ public class BookBeanTest {
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void shouldFailCreateBookWithTitleGiven() throws Exception {
+	public void shouldFailCreateBookWithNoTitleGiven() throws Exception {
 		bookBean.create(null);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void shouldFailCreateBookWithTooShortTitleGiven() throws Exception {
+		bookBean.create("ab");
 	}
 }
