@@ -8,7 +8,7 @@ Please feel free to have a look at [my blog] for the full tutorial.
 
 Simply run the following Maven command:
 
-```#!bash
+```
 mvn org.pitest:pitest-maven:mutationCoverage
 ```
 
