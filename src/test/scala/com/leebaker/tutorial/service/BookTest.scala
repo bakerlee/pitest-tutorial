@@ -6,7 +6,7 @@ import org.hamcrest.Matchers._
 import org.junit.Test
 
 //noinspection UnitMethodIsParameterless
-class BookServiceTest {
+class BookTest {
 
   @Test
   def whenValid_shouldCreateBook {
